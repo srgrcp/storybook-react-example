@@ -6,6 +6,9 @@ import { Button } from '../../components/ui/button';
 const buttonMeta: ComponentMeta<typeof Button> = {
   title: 'Example/UI/Button',
   component: Button,
+  args: {
+    children: 'Hola'
+  }
 }
 
 export default buttonMeta
@@ -14,7 +17,6 @@ const Template: ComponentStory<typeof Button> = (args) => (<Button {...args} />)
 
 export const Primary = Template.bind({})
 Primary.args = {
-  children: 'PRIMARY',
   type: 'primary',
 }
 

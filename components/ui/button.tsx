@@ -1,8 +1,19 @@
 import React, { FC, HTMLAttributes } from 'react'
 
 export type ButtonProps = HTMLAttributes<any> & {
+  /**
+   * Este es el tipo de botón
+   */
   type?: 'primary' | 'secondary'
+
+  /**
+   * Si el texto es nomal o negrita
+   */
   fontWeight?: 'normal' | 'bold'
+
+  /**
+   * Define si se muestra la animación de cargando
+   */
   loading?: boolean
 }
 

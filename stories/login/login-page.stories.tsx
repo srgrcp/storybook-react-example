@@ -14,7 +14,7 @@ const LoginPageMeta: ComponentMeta<typeof LoginPage> = {
   },
   argTypes: {
     login: {
-      action: 'login'
+      action: 'on login'
     }
   }
 }
